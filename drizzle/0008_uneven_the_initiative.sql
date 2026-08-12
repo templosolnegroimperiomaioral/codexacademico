@@ -1,0 +1,1 @@
+ALTER TABLE `academicEvents` MODIFY COLUMN `type` enum('class','exam','assignment','presentation','seminar','reading','hearing','appointment','other') NOT NULL DEFAULT 'other';

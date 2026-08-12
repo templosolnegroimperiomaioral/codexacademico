@@ -1,0 +1,18 @@
+CREATE TABLE `studyMaterials` (
+	`id` int AUTO_INCREMENT NOT NULL,
+	`userId` int NOT NULL,
+	`subjectId` int NOT NULL,
+	`title` varchar(220) NOT NULL,
+	`type` enum('link','file') NOT NULL,
+	`externalUrl` varchar(2000),
+	`storageKey` varchar(600),
+	`storageUrl` varchar(800),
+	`mimeType` varchar(160),
+	`sizeBytes` int,
+	`createdAt` timestamp NOT NULL DEFAULT (now()),
+	CONSTRAINT `studyMaterials_id` PRIMARY KEY(`id`)
+);
+--> statement-breakpoint
+ALTER TABLE `studyMaterials` ADD CONSTRAINT `studyMaterials_userId_users_id_fk` FOREIGN KEY (`userId`) REFERENCES `users`(`id`) ON DELETE cascade ON UPDATE no action;--> statement-breakpoint
+ALTER TABLE `studyMaterials` ADD CONSTRAINT `studyMaterials_subjectId_subjects_id_fk` FOREIGN KEY (`subjectId`) REFERENCES `subjects`(`id`) ON DELETE cascade ON UPDATE no action;--> statement-breakpoint
+CREATE INDEX `material_user_subject_idx` ON `studyMaterials` (`userId`,`subjectId`);

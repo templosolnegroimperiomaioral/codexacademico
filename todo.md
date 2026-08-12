@@ -1,0 +1,43 @@
+# Project TODO
+
+- [x] Criar identidade visual Codex com a logo azul fornecida, paleta escura e detalhes dourados.
+- [x] Construir dashboard acadêmico responsivo, fiel à referência para computador e celular.
+- [x] Comparar a composição visual em desktop e celular com as referências fornecidas e ajustar hierarquia, contraste, navegação lateral e barra inferior.
+- [x] Registrar verificação visual do layout em 1536×1024 e 390×844 antes da continuidade da implementação.
+- [x] Implementar autenticação e cadastro individual para múltiplos usuários.
+- [x] Criar gestão por usuário de semestres, disciplinas, professores, horários e materiais.
+- [x] Implementar agenda de provas, trabalhos, compromissos e tarefas com filtros por disciplina.
+- [x] Implementar UI de perfil acadêmico e períodos, com associação de disciplinas por usuário.
+- [x] Implementar materiais por disciplina com links e arquivos armazenados com segurança.
+- [x] Conectar eventos persistidos à agenda do painel e substituir os dados estáticos após a primeira inclusão.
+- [x] Criar filtro de disciplina para tarefas e eventos, com estados de carregamento e vazio.
+- [x] Criar central de e-mails acadêmicos organizada por disciplina.
+- [x] Preparar integração por conta com Gmail, Google Classroom e Google Calendar.
+- [x] Implementar revisão de eventos detectados no Google Calendar antes de promovê-los para a agenda.
+- [x] Configurar lembretes diários a partir de sete dias antes de provas e entregas.
+- [x] Validar com testes os principais fluxos e os layouts de computador e celular.
+- [x] Ajustar a apresentação das disciplinas no celular para cartões legíveis em lista vertical, preservando a grade ampla no computador.
+- [x] Cadastrar para a conta atual a grade de disciplinas, professores, horários e salas informada nas imagens.
+- [x] Implementar central de avisos acadêmicos recebidos por sincronização e revisão por usuário.
+- [x] Preparar conexão segura por conta com Gmail, Google Classroom e Google Calendar, sem armazenar tokens em texto simples.
+- [x] Configurar sincronização automática e lembretes de provas, trabalhos e avisos recebidos nas integrações.
+- [x] Adotar sincronização por polling a cada 15 minutos, em substituição ao Google Cloud Pub/Sub, conforme a escolha sem mensageria paga.
+- [x] Dispensar renovação de canais de aviso enquanto a arquitetura escolhida usa polling, e não canais de notificação Google.
+- [x] Exibir o limite operacional de 96 ciclos diários e o modo sem mensageria paga, reduzindo risco de cobrança inesperada.
+- [x] Disponibilizar configuração inicial do Google Cloud sem custos recorrentes e explicar claramente os limites da sincronização sem faturamento ativo.
+- [x] Implementar alternativa de atualização manual sob demanda enquanto a conta Google ou o faturamento não estiverem configurados.
+- [x] Agrupar ou identificar e-mails e avisos por disciplina no painel, com uma categoria clara para itens não reconhecidos.
+- [x] Implementar aprovação, descarte e registro de revisão para avisos e atividades detectados automaticamente.
+- [x] Exibir controle funcional de sincronização manual com retorno de sucesso ou erro no painel.
+- [x] Implementar revisão e promoção explícita para atividades detectadas no Gmail e no Classroom, incluindo criação controlada de tarefas somente após aprovação do usuário.
+- [x] Cobrir com testes executados os fluxos de sincronização manual, filtro por disciplina e central de avisos/e-mails, registrando também a validação visual desses estados em computador e celular.
+- [x] Adicionar teste executado da mutation de sincronização manual, incluindo estados de sucesso e falha.
+- [x] Adicionar teste executado da central de avisos e do filtro por disciplina usados pelo painel.
+- [x] Atualizar a identificação exibida no painel para Gabrielle Luiza.
+- [x] Permitir preencher os conteúdos por encontro da grade 2026.2 quando o cronograma ou a ementa oficial for fornecido, por cadastro manual ou sincronização de e-mails.
+- [x] Exibir e gerar aviso diário do conteúdo previsto para a aula do dia.
+- [x] Manter cadastro manual de conteúdos por aula como alternativa complementar ao e-mail.
+- [x] Detectar conteúdos e temas de aula em e-mails acadêmicos sincronizados automaticamente.
+- [x] Exigir revisão antes de associar um tema detectado à próxima aula da disciplina.
+- [x] Corrigir a inicialização do fluxo de conteúdos por aula e revalidar o painel sem erro de execução.
+- [x] Cobrir por teste tRPC a criação manual, a validação e a aprovação de conteúdos por aula.

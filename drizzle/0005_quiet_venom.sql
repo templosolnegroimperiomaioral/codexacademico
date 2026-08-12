@@ -1,0 +1,1 @@
+ALTER TABLE `academicNotifications` ADD `detectedStartsAt` bigint;

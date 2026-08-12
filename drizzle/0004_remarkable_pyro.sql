@@ -1,0 +1,2 @@
+ALTER TABLE `academicNotifications` ADD `reviewStatus` enum('pending','approved','dismissed') DEFAULT 'pending' NOT NULL;--> statement-breakpoint
+ALTER TABLE `academicNotifications` ADD `reviewedAt` bigint;
